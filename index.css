@@ -13,6 +13,13 @@ a {
     cursor: pointer;
 }
 
+/* button {
+    padding: 4px 10px;
+    border-radius: 10px;
+    background-color: #8cc84b;
+    border: none;
+} */
+
 header {
     background-color: black;
     display: flex;
@@ -98,6 +105,18 @@ header #name {
      font-size: 18px;
 }
 
+#about-para {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+}
+
+#about-para i {
+    width: 70%;
+}
+
 #about-heading {
     width: fit-content;
     margin: 0 auto;
@@ -125,7 +144,6 @@ header #name {
 
 #about-section {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     height: auto;
     padding-bottom: 2rem;
@@ -138,12 +156,43 @@ header #name {
     font-size: 18px;
 }
 
-#about-left, #about-right {
-    width: 40%;
+#about-left {
+    width: 35%;
+}
+
+#about-right {
+    width: 50%;
 }
 
 #about-img {
     width: 100%;
+}
+
+#services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#services-container div {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border: 0.1px groove beige;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#services-container div h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+#services-container div p {
+    font-size: 15px;
+    margin: 0;
+    line-height: normal;
+    margin-bottom: 2px;
 }
 
 #projects-section h1 {
@@ -394,15 +443,17 @@ footer #social-icons a{
     }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1050px) {
    #about-section {
       flex-direction: column;
+      align-items: center;
    }
-#about-left {
+#about-left, #about-right {
     width: 80vw;
    }
-   #about-right {
-    display: none;
+
+   #about-right div {
+    margin-bottom: 1rem;
    }
    
 }
@@ -457,7 +508,10 @@ footer #social-icons a{
               display: none;
           }
     #about-left {
-        width: 85vw;
+        width: 90vw;
+    }
+    #about-right {
+        width: 90vw;
     }
     .contact {
         width: 40%;
@@ -494,6 +548,13 @@ footer #social-icons a{
     #home-section-left {
         width: 95%;
         gap: 5px;
+    }
+   #about-right {
+    justify-content: center;
+    align-items: center;
+   }
+    #about-right div {
+        width: 80%;
     }
 }
 

@@ -48,7 +48,7 @@ contactLink.addEventListener("click", (e) => {
   }
   e.target.classList.add("active-nav-link");
   scrollTo({
-    top: 2330,
+    top: 3100,
     behavior: "smooth",
   });
 });
