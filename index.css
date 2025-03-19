@@ -58,7 +58,7 @@ header #name {
     gap: 2rem;
     align-items: center;
     justify-content: space-evenly;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 100px);
 }
 
 #home-section-left {
@@ -105,6 +105,10 @@ header #name {
      font-size: 18px;
 }
 
+#about {
+    padding: 3rem 0 0 0; 
+}
+
 #about-para {
     width: 100%;
     display: flex;
@@ -146,7 +150,6 @@ header #name {
     display: flex;
     justify-content: space-evenly;
     height: auto;
-    padding-bottom: 2rem;
     margin-top: 2rem;
 }
 
@@ -164,14 +167,11 @@ header #name {
     width: 50%;
 }
 
-#about-img {
-    width: 100%;
-}
-
 #services-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    width: 100%;
 }
 
 #services-container div {
@@ -194,7 +194,9 @@ header #name {
     line-height: normal;
     margin-bottom: 2px;
 }
-
+#projects-section {
+    padding: 3rem 0 0 0;
+}
 #projects-section h1 {
     text-align: center;
     width: fit-content;
@@ -210,7 +212,7 @@ header #name {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 3rem 0;
+    margin: 1rem 0 3rem;
 }
 
 .odd-projects .projects-left {
@@ -451,9 +453,12 @@ footer #social-icons a{
 #about-left, #about-right {
     width: 80vw;
    }
-
-   #about-right div {
+#about-right h2 {
+    margin: 1rem 0;
+}
+   #services-container div {
     margin-bottom: 1rem;
+    border: solid;
    }
    
 }
@@ -475,6 +480,9 @@ footer #social-icons a{
     .odd-projects .projects-right {
         width: 90%;
         margin-bottom: 2rem;
+    }
+    #about-para i{
+        width: 90%;
     }
 
     .odd-projects .projects-left {
@@ -542,6 +550,19 @@ footer #social-icons a{
     #connect-section-right-wrapper {
         width: 90%;
     }
+    #about-para {
+        font-size: 14px;
+        width: 98%;
+    }
+         #services-container {
+             justify-content: center;
+         }
+    #about-right h2 {
+        text-align: center;
+    }
+         #services-container div {
+             width: 80%;
+         }
 }
 
 @media screen and (max-width:500px) {
@@ -553,9 +574,7 @@ footer #social-icons a{
     justify-content: center;
     align-items: center;
    }
-    #about-right div {
-        width: 80%;
-    }
+  
 }
 
 @media screen and (max-width:400px) {

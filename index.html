@@ -13,13 +13,13 @@
   </head>
   <body>
     <!-- Navbar -->
-    <header>
+    <header id="header">
       <div id="name">Sami Xial</div>
       <div id="header-right">
-        <a href="" id="home-link">Home</a>
-        <a href="" id="about-link">About</a>
-        <a href="" id="projects-link">Projects</a>
-        <a href="" id="contact-link">Contact me</a>
+        <a id="home-link" href="#">Home</a>
+        <a id="about-link" onclick="scrollIntoSection('about')">About</a>
+        <a id="projects-link" onclick="scrollIntoSection('projects-section')">Projects</a>
+        <a id="contact-link" onclick="scrollIntoSection('contact-section')">Contact me</a>
       </div>
     </header>
 
@@ -55,9 +55,8 @@
       
       </div>
 
-
       <!--  ABOUt SECTION -->
-
+        <div id="about">
       <h1 style="color: #ffbd39; font-size: 40px; text-align: center">
         About Me
       </h1>
@@ -168,6 +167,7 @@
            </div>
            </div>
         </div>
+      </div>
       </div>
 
       <!-- Projects Section -->
