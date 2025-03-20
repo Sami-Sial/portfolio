@@ -13,12 +13,9 @@ a {
     cursor: pointer;
 }
 
-/* button {
-    padding: 4px 10px;
-    border-radius: 10px;
-    background-color: #8cc84b;
-    border: none;
-} */
+a.active {
+    border-bottom: 1px solid #ffbd39;
+}
 
 header {
     background-color: black;
@@ -578,12 +575,9 @@ footer #social-icons a{
 }
 
 @media screen and (max-width:400px) {
-    #header-right a{
-        font-size: 13px;
-    }
-    header {
+    /* header {
         padding: 5px;
-    }
+    } */
     #home-section-left {
         gap: 0px;
     }
