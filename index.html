@@ -1,557 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="w3GCFyoM6xlN8_wC4fT9oUyvBO0-h6evJmvdQJidC1U" />
+  <meta name="author" content="Sami Ullah" />
+  <meta name="robots" content="index, follow" />
 
-  <!-- SEO Meta Tags -->
-  <title>Sami Xial Portfolio | Full Stack Developer</title>
+  <!-- SEO Meta -->
+  <title>Sami Ullah | Full Stack Developer | MERN, React, Next.js, Node.js</title>
   <meta name="description"
-    content="Sami Xial Portfolio - Showcase of projects and skills in Full Stack Web Development. Node.js, React, Next.js, MongoDB projects and more." />
+    content="Sami Ullah - Full Stack Developer (MERN, React, Next.js, Node.js). Frontend & Backend Web & Mobile Apps. Portfolio of Sami Ullah Sial." />
   <meta name="keywords"
-    content="Sami Xial, Portfolio, Full Stack Developer, Web Developer, React, Node.js, Next.js, JavaScript, Projects" />
-  <meta name="author" content="Sami Xial" />
+    content="Full Stack Engineer, Full Stack Developer, MERN Developer, Frontend Developer, Backend Developer, React Developer, Next.js Developer, JavaScript Developer, Node.js Developer, Sami Ullah, Sami Sial, Sami Ullah Khan, Nawab Sami, Sami Portfolio" />
 
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="Sami Xial Portfolio" />
-  <meta property="og:description"
-    content="Showcase of projects and skills in Full Stack Web Development. Node.js, React, Next.js, MongoDB projects and more." />
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yoursite.com" />
-  <meta property="og:image" content="https://yoursite.com/assets/portfolio-logo.png" />
+  <meta property="og:title" content="Sami Ullah | Full Stack Developer | MERN, React, Next.js" />
+  <meta property="og:description"
+    content="Sami Ullah is a Full Stack Developer building scalable web & mobile apps using MERN, React, Next.js, Node.js." />
+  <meta property="og:image" content="https://sami-sial-portfolio.vercel.app/assets/sami.png" />
+  <meta property="og:url" content="https://sami-sial-portfolio.vercel.app" />
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sami Xial Portfolio" />
+  <meta name="twitter:title" content="Sami Ullah | Full Stack Developer | MERN, React, Next.js" />
   <meta name="twitter:description"
-    content="Showcase of projects and skills in Full Stack Web Development. Node.js, React, Next.js, MongoDB projects and more." />
-  <meta name="twitter:image" content="https://yoursite.com/assets/portfolio-logo.png" />
+    content="Full Stack Developer specializing in MERN, React, Next.js, Node.js. Sami Ullah Portfolio." />
+  <meta name="twitter:image" content="https://sami-sial-portfolio.vercel.app/assets/sami.png" />
 
-  <!-- Favicon -->
+  <!-- Favicon & Fonts -->
   <link rel="icon" href="./assets/portfolio-logo.png" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-hot-toast@2.4.1/dist/index.css">
 </head>
 
-  <body>
-    <!-- Navbar -->
-    <header id="header">
-      <div id="name">Sami Xial</div>
-      <div id="header-right">
-        <a class="nav-link" id="home-link" href="#">Home</a>
-        <a class="nav-link" id="about-link" onclick="scrollIntoSection('about')"
-          >About</a
-        >
-        <a
-          class="nav-link"
-          id="projects-link"
-          onclick="scrollIntoSection('projects-section')"
-          >Projects</a
-        >
-        <a
-          class="nav-link"
-          id="contact-link"
-          onclick="scrollIntoSection('contact-section')"
-          >Contact me</a
-        >
+
+<body>
+  <!-- Navbar -->
+  <header id="header">
+    <div id="name">Sami Ullah</div>
+    <nav id="nav-links">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+<section id="home" class="hero">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="./assets/galaxy.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Dark Overlay for readability -->
+  <div class="hero-overlay"></div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <h3 class="fade-in" style="padding-top: 1rem;">Hello, I'm</h3>
+    <h1 class="gradient-text" style="padding-top: 1rem;">Sami Ullah</h1>
+    <h2 class="typewriter">Full Stack Developer</h2>
+    <p class="highlight-text">
+      Expert in <strong>MERN Stack, Next.js, React Native, Prisma, Mongoose, Tailwind, Bootstrap, MUI</strong>
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Hire Me</a>
+      <a href="https://drive.google.com/file/d/1NhmxJKVCO5TotRY7aVlHdD6-dUhWgOYP/view?usp=drive_link" target="_blank"
+        class="btn-secondary">Download CV</a>
+    </div>
+    <div class="social-icons">
+      <a href="mailto:samisial1555@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/sami-ullah-b536a8338/" target="_blank"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Sami-Sial" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="./assets/man.png" alt="Sami Ullah" class="profile-img" />
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    I'm a <span class="highlight">Full Stack Developer</span> with <span class="highlight">2 years of experience</span> in
+    building
+    <span class="highlight">real-time, user-centric</span> web and mobile applications.
+  </p>
+
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Skills</h3>
+        <ul>
+          <li><strong>Frontend:</strong> React, Redux, Next.js, Html, CSS, JS, Tailwind, Bootstrap, MUI</li>
+          <li><strong>Backend:</strong> Node.js, Express, MongoDB, Mongoose, Prisma</li>
+          <li><strong>Mobile:</strong> React Native, Expo</li>
+          <li><strong>Tools:</strong> Git, Vercel, Postman, Stripe, Socket.io</li>
+        </ul>
       </div>
-    </header>
-
-    <main>
-      <!-- Home Section -->
-      <div id="home-section">
-        <div id="home-section-left">
-          <h3 style="color: #ffbd39">Hello!</h3>
-          <h1>
-            <span>I'm</span
-            ><span style="color: #ffbd39; font-size: 45px"> Sami Xial</span>
-          </h1>
-          <h2 style="color: #1788ae; margin-bottom: 20px">
-            MERN Stack Web Developer
-          </h2>
-          <p style="font-size: 18px">
-            I'm a Full Stack Web Developer with one year of coding experience,
-            skilled in building dynamic web applications
-          </p>
-          <div id="home-section-btns" style="margin-top: 15px">
-            <a
-              target="_blank"
-              href="https://drive.google.com/file/d/1NhmxJKVCO5TotRY7aVlHdD6-dUhWgOYP/view?usp=drive_link"
-              style="
-                background-color: #ffbd39;
-                color: black;
-                margin-right: 2rem;
-              "
-              >Resume</a
-            >
-            <a href="mailto:samisial1555@gmail.com"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/sami-ullah-b536a8338/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a target="_blank" href="https://github.com/Sami-Sial"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </div>
-        </div>
-
-        <div id="home-section-right">
-          <img src="./assets/man.png" alt="" />
-        </div>
+      <div class="about-card">
+        <h3>Education</h3>
+        <li>Matriculation <br><strong>96% Marks</strong></li>
+        <li>FSc Pre-Medical <br><strong>97% Marks</strong></li>
+        <li>Science Talent Farming Scheme (STFS) Scholar</li>
       </div>
 
-      <!--  ABOUt SECTION -->
-      <div id="about">
-        <h1 style="color: #ffbd39; font-size: 40px; text-align: center">
-          About Me
-        </h1>
-        <div id="about-para">
-          <i>
-            I'm a
-            <span style="color: #1788ae">Full Stack Web Developer</span> with
-            one year of coding experience, skilled in building dynamic web
-            applications using front-end and back-end technologies. Proficient
-            in JavaScript, React, Next.js, Node.js, and databases like MongoDB
-            and MySQL.
-          </i>
-        </div>
+    </div>
 
-        <div id="about-section">
-          <div id="about-left">
-            <section>
-              <h2 style="color: #ffbd39; font-size: 25px">Skills :</h2>
-              <p>
-                <span style="color: #1788ae">Frontend :</span> HTML, CSS,
-                JavaScript, React JS
-              </p>
-              <p>
-                <span style="color: #1788ae; font-size: 18px"
-                  >Frontend Frameworks :</span
-                >
-                React.js, Tailwind CSS, Bootstrap, Shadcn UI
-              </p>
-              <p>
-                <span style="color: #1788ae">Backend :</span> Node JS, Mongo
-                Database, My SQL Database
-              </p>
-              <p>
-                <span style="color: #1788ae">Backend Frameworks</span> :
-                Express.js, Mongoose
-              </p>
-              <p>
-                <span style="color: #1788ae">Fullstack Framework</span> : Next
-                JS
-              </p>
-              <p>
-                <span style="color: #1788ae">Version Control System</span> :
-                Git, Github
-              </p>
-              <p>
-                <span style="color: #1788ae">Deployment</span> : AWS, Render,
-                Firebase, Netlify
-              </p>
-              <p>
-                <span style="color: #1788ae">API's Testing</span> : Hoppscotch,
-                Postman
-              </p>
-              <br />
-              <h3>Tech Stack</h3>
-              <br />
-              <div id="stack-wrapper">
-                <div class="mern">
-                  <img src="./assets/mongodb.png" width="60px" alt="" />
-                  <h2 style="color: #47a248">M</h2>
-                </div>
-                <div class="mern">
-                  <img src="./assets/express.png" width="60px" alt="" />
-                  <h2>E</h2>
-                </div>
-                <div class="mern">
-                  <img src="./assets/react.png" width="60px" alt="" />
-                  <h2 style="color: #61dafb">R</h2>
-                </div>
-                <div class="mern">
-                  <img src="./assets/nodejs.png" width="60px" alt="" />
-                  <h2 style="color: #8cc84b">N</h2>
-                </div>
-              </div>
-            </section>
-            <section>
-              <h2 style="color: #ffbd39; font-size: 20px; margin-top: 1rem">
-                Education :
-              </h2>
-              <p>12 Years of education(FSc Pre Medical) with 97% marks</p>
-            </section>
-            <br />
+  <!-- MERN Stack -->
+  <div class="tech-stack-cards">
+    <!-- MERN Stack Card -->
+    <div class="stack-card">
+      <h3>MERN Stack</h3>
+      <div class="stack-icons">
+        <div class="stack-item">
+          <img src="./assets/mongodb.png" alt="MongoDB">
+          <span>MongoDB</span>
+        </div>
+        <div class="stack-item">
+          <img src="./assets/expressjs.svg" alt="Express">
+          <span>Express</span>
+        </div>
+        <div class="stack-item">
+          <img src="./assets/react.png" alt="React">
+          <span>React</span>
+        </div>
+        <div class="stack-item">
+          <img src="./assets/nodejs.png" alt="Node.js">
+          <span>Node.js</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Next.js Card -->
+    <div class="stack-card">
+      <h3>Next.js</h3>
+      <div class="stack-icons single-icon">
+        <div class="stack-item">
+          <img src="./assets/next-js.svg" alt="Next.js">
+          <span>Next.js</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- React Native Card -->
+    <div class="stack-card">
+      <h3>React Native</h3>
+      <div class="stack-icons single-icon">
+        <div class="stack-item">
+          <img src="./assets/react.png" alt="React Native">
+          <span>React Native</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2 class="section-title">My Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Full Stack Web Apps</h3>
+        <p>MERN | Next.js | EJS + Node.js</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-mobile"></i>
+        <h3>Mobile Apps</h3>
+        <p>React Native | Expo | Cross-Platform</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-database"></i>
+        <h3>Database Design</h3>
+        <p>MongoDB | Prisma | Mongoose</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>Real-Time Features</h3>
+        <p>Socket.io | Live Chat | Notifications</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-credit-card"></i>
+        <h3>Payment Gateways</h3>
+        <p>Stripe | PayPal | Secure Checkout</p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-gauge"></i>
+        <h3>Admin Dashboards</h3>
+        <p>Analytics | User Management | CRUD</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Latest Projects</h2>
+    <div class="projects-container">
+
+      <!-- Airbnb Clone -->
+      <div class="project-card">
+        <img src="./assets/airbnb.png" alt="Airbnb Clone" />
+        <div class="project-info">
+          <h3>Airbnb Clone</h3>
+          <p>Full-stack real estate platform with image upload, maps, reviews, and MVC architecture.</p>
+          <div class="project-tags">
+            <span>MVC</span><span>Cloudinary</span><span>Mapbox</span>
           </div>
-          <div id="about-right">
-            <section>
-              <h2 style="color: #ffbd39; font-size: 22px; margin-bottom: 5px">
-                My Services :
-              </h2>
-              <p style="font-size: 16px; line-height: 1rem">
-                1- Full Stack Web Apps Development with MERN Stack
-              </p>
-              <p style="font-size: 16px; line-height: 1rem">
-                2- Full Stack Web Apps Development in Next JS
-              </p>
-              <p style="font-size: 16px; line-height: 1rem">
-                3- Full Stack Web Apps Development with Node JS, EJS Templating
-              </p>
-            </section>
-            <section id="experience">
-              <h2 style="color: #1788ae; font-size: 20px">Experience :</h2>
-              <p>
-                1 year of learning and coding experience in developing web apps
-              </p>
-              <p style="font-size: 16px; line-height: 1rem">
-                --> Latest Projects
-              </p>
-              <li style="font-size: 16px; line-height: 1rem">
-                <a
-                  href="https://mern-chat-app-frontend-eiyz.vercel.app/"
-                  style="text-decoration: underline"
-                  >The Talk-A-Tive</a
-                >
-              </li>
-              <p style="font-size: 16px; margin-left: 1.5rem">
-                Real time Chat App with socket.io using MERN Stack
-              </p>
-              <li style="font-size: 16px; line-height: 1rem">
-                <a
-                  href="https://mern-ecommerce-app-frontend-nine.vercel.app"
-                  style="text-decoration: underline"
-                  >Ecommerce App</a
-                >
-              </li>
-              <p style="font-size: 16px; margin-left: 1.5rem">
-                Full Stack Ecommerce App using MERN Stack
-              </p>
-              <li style="font-size: 16px; line-height: 1rem">
-                <a
-                  href="https://fullstackairbnbclone2-caejb67v.b4a.run/listings"
-                  style="text-decoration: underline"
-                  >Real Esate App</a
-                >
-              </li>
-              <p style="font-size: 16px; margin-left: 1.5rem">
-                Full Stack Airbnb Clone using MVC Pattern
-              </p>
-              <a
-                href="https://github.com/Sami-Sial"
-                target="_blank"
-                style="margin-right: 2rem"
-                >--> <button>See all on Github</button></a
-              >
-              <a href="https://drive.google.com/file/d/1NhmxJKVCO5TotRY7aVlHdD6-dUhWgOYP/view?usp=drive_link" target="_blank"
-                >--> <button>View resume</button></a
-              >
-            </section>
-            <section>
-              <h2 style="color: #ffbd39; font-size: 20px; margin-top: 1rem">
-                Achievements :
-              </h2>
-              <li>
-                Topper of my all village schools in matric board exams with 96%
-                marks
-              </li>
-              <li>
-                Topper of my all village schools in middle board exams with 96%
-                marks
-              </li>
-              <li>
-                Cracked STFS (science Talent Farming Scheme) , a cholarship
-                launched by Pakistan Science Foundation, Islamabad.From Province
-                Punjab, Pakistan 133 students were selected on interview and
-                wriiten test basis.I was part of them.And I got 2.5 lac
-                scholarship
-              </li>
-            </section>
+          <div class="project-links">
+            <a href="https://fullstackairbnbclone2-gwrdnbzj.b4a.run/listings" target="_blank" class="btn-live">Live
+              Demo</a>
+            <a href="https://github.com/Sami-Sial" target="_blank" class="btn-code">View Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Projects Section -->
-      <div id="projects-section">
-        <h1>Latest Works</h1>
-
-        <div class="projects odd-projects">
-          <div class="projects-left">
-            <a
-              target="_blank"
-              href="https://fullstackairbnbclone2-caejb67v.b4a.run/listings"
-              ><img class="projects-img" src="./assets/airbnb.png" alt=""
-            /></a>
-            <div class="horizontal-line blue"></div>
-            <div class="circle"></div>
+      <!-- Chat App -->
+      <div class="project-card">
+        <img src="./assets/chat-app.png" alt="Chat App" />
+        <div class="project-info">
+          <h3>Talk-A-Tive</h3>
+          <p>Real-time chat app with Socket.io, JWT auth, media sharing, and typing indicators.</p>
+          <div class="project-tags">
+            <span>MERN</span><span>Socket.io</span><span>JWT</span>
           </div>
-          <div class="vertical-line"></div>
-          <div class="projects-right">
-            <h2 class="yellow" style="color: #ffbd39">Airbnb</h2>
-            <h4 class="blue">(Real Estate App)</h4>
-            <div class="project-info">
-              <p style="margin-bottom: 10px">
-                <i
-                  >Full Stack AirBnb Clone using MVC Pattern in which users can
-                  list their properties for rent.</i
-                >
-              </p>
-              🚀 Features <br />
-              1-Authentication & Authorization 2-Image Upload using Cloudinary
-              3-Create Listings of Properties 4-Add Reviews 5-Delete Listings &
-              Reviews 6-Edit Listing 7-Map pointing to Listing Location
-              <p style="margin-bottom: 5px">Technologies Used :</p>
-              <div class="btns">
-                <button>#MVC Pattern</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="projects even-projects">
-          <div class="projects-left">
-            <h2 class="yellow" style="color: #ffbd39">WhatsApp</h2>
-            <h4 class="blue">(Real Time chat App)</h4>
-            <div class="project-info">
-              <p style="margin-bottom: 10px">
-                <i
-                  >A real-time chat application built using the **MERN stack**
-                  (MongoDB, Express.js, React, Node.js) with **Socket.io** for
-                  instant messaging..</i
-                >
-              </p>
-
-              🚀 Features <br />
-              1-Real-time messaging with Socket.io 2-User authentication using
-              JWT 3-Private and group chat 4-Media sharing (images, videos,
-              files) 5-Online/offline status indicators 6-Typing indicators
-              7-Receipts Notifications for new messages
-              <p style="margin-bottom: 5px">Technologies Used :</p>
-              <div class="btns">
-                <button>#MERN Stack</button>
-              </div>
-            </div>
-          </div>
-          <div class="vertical-line"></div>
-          <div class="projects-right">
-            <div class="circle"></div>
-            <div class="horizontal-line blue"></div>
-            <a
-              target="_blank"
-              href="https://mern-chat-app-frontend-eiyz.vercel.app/"
-              ><img class="projects-img" src="./assets/chat-app.png" alt=""
-            /></a>
-          </div>
-        </div>
-
-        <div class="projects odd-projects">
-          <div class="projects-left">
-            <a
-              target="_blank"
-              href="https://mern-ecommerce-app-frontend-nine.vercel.app"
-              ><img class="projects-img" src="./assets/ecommerce.png" alt=""
-            /></a>
-            <div class="horizontal-line blue"></div>
-            <div class="circle blue"></div>
-          </div>
-          <div class="vertical-line"></div>
-          <div class="projects-right">
-            <h2 class="yellow">Ecommerce App</h2>
-            <h4 class="blue">(Shopping App)</h4>
-            <div class="project-info">
-              <p style="margin-bottom: 10px">
-                <i
-                  >🛒 An eCommerce web application that allows users to browse
-                  products, add items to their cart, and securely complete
-                  purchases. Built using **MERN Stack (MongoDB, Express JS,
-                  React JS, Node JS)</i
-                ><br />
-                <br />
-                <span>
-                  🚀 Features <br />
-                  1-User authentication (login/register) 2-Product listing with
-                  categories, 3-Filtering with categories, ratings and pricing
-                  of products 4-Searching products 5-Shopping cart and checkout
-                  system 6-Payment gateway integration (Stripe) 7-Order history
-                  and tracking 8-Admin dashboard for managing products, orders &
-                  users
-                </span>
-              </p>
-              <p style="margin-bottom: 5px">Technologies Used :</p>
-              <div class="btns">
-                <button>#MERN Stack</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="projects even-projects">
-          <div class="projects-left">
-            <h2 class="yellow">React Todo App</h2>
-            <h4 class="blue">(Todo App)</h4>
-            <div class="project-info">
-              <p style="margin-bottom: 10px">
-                <i
-                  >Enhanced the basic To-Do application by integrating external
-                  API data, implementing advanced state management using Redux,
-                  and ensuring the application is responsive and user-friendly
-                  across different devices.</i
-                >
-              </p>
-              <p style="margin-bottom: 5px">Technologies Used :</p>
-              <div class="btns">
-                <button>React JS</button>
-                <button>Redux Toolkit</button>
-                <button>#API Integration</button>
-              </div>
-            </div>
-          </div>
-          <div class="vertical-line"></div>
-          <div class="projects-right">
-            <div class="circle blue"></div>
-            <div class="horizontal-line blue"></div>
-            <a
-              target="_blank"
-              href="https://react-todo-app-ochre-three.vercel.app/"
-            >
-              <img class="projects-img" src="./assets/react-todo.png" alt=""
-            /></a>
-          </div>
-        </div>
-
-        <div class="projects odd-projects">
-          <div class="projects-left">
-            <a target="_blank" href="https://zoom-ui-clone.vercel.app/"
-              ><img class="projects-img" src="./assets/zoom.png" alt=""
-            /></a>
-            <div class="horizontal-line blue"></div>
-            <div class="circle blue"></div>
-          </div>
-          <div class="vertical-line"></div>
-          <div class="projects-right">
-            <h2 class="yellow">Zoom UI Clone</h2>
-            <h4 class="blue">(Static Website)</h4>
-            <div class="project-info">
-              <p style="margin-bottom: 10px">UI Clone of Zoom homepage.</p>
-              <p style="margin-bottom: 5px">Technologies Used :</p>
-              <div class="btns">
-                <button>#Html</button>
-                <button>#Pure CSS</button>
-                <button>#Vanilla JS</button>
-              </div>
-            </div>
+          <div class="project-links">
+            <a href="https://mern-chat-app-frontend-eiyz.vercel.app/" target="_blank" class="btn-live">Live Demo</a>
+            <a href="https://github.com/Sami-Sial" target="_blank" class="btn-code">View Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Contact Section -->
-      <div id="contact-section">
-        <h1 style="text-align: center; font-size: 40px">Contact Me</h1>
-        <p style="text-align: center">Below are the details to reach me out.</p>
-        <div id="contacts">
-          <div class="contact">
-            <div class="contact-icon-box">
-              <i class="fa-solid fa-house"></i>
-            </div>
-            <p style="font-size: 20px">Address</p>
-            <p>Jhang, Pakistan</p>
+      <!-- Ecommerce -->
+      <div class="project-card">
+        <img src="./assets/ecommerce.png" alt="Ecommerce" />
+        <div class="project-info">
+          <h3>E-Commerce Store</h3>
+          <p>Full MERN e-commerce with Stripe, cart, filters, admin panel, and order tracking.</p>
+          <div class="project-tags">
+            <span>MERN</span><span>Stripe</span><span>Redux</span>
           </div>
-
-          <div class="contact">
-            <div class="contact-icon-box">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <p style="font-size: 20px">Contact Number</p>
-            <p>+92 314 6180920</p>
-          </div>
-
-          <div class="contact">
-            <div class="contact-icon-box">
-              <i class="fa-brands fa-telegram"></i>
-            </div>
-            <p style="font-size: 20px">Email Address</p>
-            <p>samisial1555@gmail.com</p>
-          </div>
-
-          <div class="contact">
-            <div class="contact-icon-box">
-              <a href="https://drive.google.com/file/d/1NhmxJKVCO5TotRY7aVlHdD6-dUhWgOYP/view?usp=drive_link"
-                ><i class="fa-solid fa-download"></i
-              ></a>
-            </div>
-            <a style="font-size: 20px" target="_blank" href="https://drive.google.com/file/d/1NhmxJKVCO5TotRY7aVlHdD6-dUhWgOYP/view?usp=drive_link"
-              >Resume</a
-            >
+          <div class="project-links">
+            <a href="https://mern-ecommerce-app-frontend-nine.vercel.app" target="_blank" class="btn-live">Live Demo</a>
+            <a href="https://github.com/Sami-Sial" target="_blank" class="btn-code">View Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Connect-section -->
-      <div id="connect-section">
-        <h1 id="connect-section-heading">Lets Connect</h1>
-        <div id="connect-wrapper">
-          <div id="connect-section-left">
-            <img
-              id="connect-img"
-              src="./assets/contact-me.png"
-              width="80%"
-              alt=""
-            />
+      <!-- Todo App -->
+      <div class="project-card">
+        <img src="./assets/react-todo.png" alt="Todo App" />
+        <div class="project-info">
+          <h3>React Todo App</h3>
+          <p>Advanced To-Do with Redux Toolkit, API integration, and responsive design.</p>
+          <div class="project-tags">
+            <span>React</span><span>Redux</span><span>API</span>
           </div>
-
-          <div id="connect-section-right-wrapper">
-            <div id="connect-section-right">
-              <div class="group">
-                <label for="username"
-                  ><i class="fa-solid fa-person"></i>Name</label
-                >
-                <input type="text" id="username" />
-              </div>
-              <div class="group">
-                <label for="email"
-                  ><i class="fa-solid fa-message"></i>Email</label
-                >
-                <input type="text" id="email" />
-              </div>
-              <textarea name="" id="" cols="30" rows="10"></textarea> <br />
-              <button id="connect-form-btn">
-                <i class="fa-brands fa-telegram"></i>
-                Send
-              </button>
-            </div>
+          <div class="project-links">
+            <a href="https://react-todo-app-ochre-three.vercel.app/" target="_blank" class="btn-live">Live Demo</a>
+            <a href="https://github.com/Sami-Sial" target="_blank" class="btn-code">View Code</a>
           </div>
         </div>
       </div>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-      <p>Nawab Sami &copy; 2024</p>
-      <div id="portfolio-logo">
-        <img src="./assets/portfolio-logo.png" width="70px" alt="" />
+      <!-- Zoom UI Clone -->
+      <div class="project-card">
+        <img src="./assets/zoom.png" alt="Zoom UI Clone" />
+        <div class="project-info">
+          <h3>Zoom UI Clone</h3>
+          <p>Pixel-perfect static clone of Zoom homepage using HTML, CSS, and Vanilla JS.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://zoom-ui-clone.vercel.app/" target="_blank" class="btn-live">Live Demo</a>
+            <a href="https://github.com/Sami-Sial" target="_blank" class="btn-code">View Code</a>
+          </div>
+        </div>
       </div>
-      <div id="social-icons">
-        <a href="mailto:samisial1555@gmail.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/sami-ullah-b536a8338/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a target="_blank" href="https://github.com/Sami-Sial"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-      </div>
-    </footer>
 
-    <!-- Attach JS fil -->
-    <script src="index.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Get In Touch</h2>
+  
+    <div class="contact-wrapper">
+      <!-- LEFT – Contact Info -->
+  <div class="contact-info">
+    <div class="contact-item">
+      <i class="fa-solid fa-map-marker-alt"></i>
+      <p>Jhang, Pakistan</p>
+    </div>
+    <div class="contact-item">
+      <i class="fa-solid fa-phone"></i>
+      <p>+92 314 6180920</p>
+    </div>
+    <div class="contact-item">
+      <i class="fa-solid fa-envelope"></i>
+      <p><a href="mailto:samisial1555@gmail.com">samisial1555@gmail.com</a></p>
+    </div>
+    <div class="contact-item">
+      <i class="fa-solid fa-file"></i>
+      <p>
+        <a target="_blank" href="https://drive.google.com/file/d/1NhmxJKVCO5TotRY7aVlHdD6-dUhWgOYP/view?usp=drive_link">
+          Resume
+        </a>
+      </p>
+    </div>
+    <div class="contact-item">
+      <i class="fa-brands fa-linkedin"></i>
+      <p>
+        <a target="_blank" href="https://www.linkedin.com/in/sami-ullah-b536a8338/">
+          LinkedIn
+        </a>
+      </p>
+    </div>
+    <div class="contact-item">
+      <i class="fa-brands fa-github"></i>
+      <p>
+        <a target="_blank" href="https://github.com/Sami-Sial">
+          GitHub
+        </a>
+      </p>
+    </div>
+  </div>
+
+      <!-- RIGHT – Form (glassmorphic) -->
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <i class="fa-solid fa-user input-icon"></i>
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+  
+        <div class="form-group">
+          <i class="fa-solid fa-envelope input-icon"></i>
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+  
+        <div class="form-group">
+          <i class="fa-solid fa-comment input-icon"></i>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+  
+        <button type="submit" class="submit-btn">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span class="btn-text">Whatsapp Message</span>
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sami Ullah. All Rights Reserved.</p>
+    <div class="footer-social">
+      <a href="mailto:samisial1555@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/sami-ullah-b536a8338/" target="_blank"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Sami-Sial" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+<div id="toast" class="toast"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-hot-toast@2.4.1/dist/index.umd.js"></script>
+</body>
+
 </html>
